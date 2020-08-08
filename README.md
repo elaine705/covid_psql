@@ -1,7 +1,7 @@
 # covid_psql
 
 ## Sources
- - USA coronavirus data from CDC via [John Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+ - USA and US territories coronavirus data from CDC via [John Hopkins University](https://github.com/CSSEGISandData/COVID-19)
  - 2016 Presidential Election to determine each state's political party
  
 ## Process
@@ -16,6 +16,19 @@
 |[Postgres](https://www.postgresql.org/download/) | 12.0 | Database for connection |
 |[Grafana](https://grafana.com/grafana/download) | OpenSource 7.1.3 | Dashboard visualization | 
 |SQLite| - | Intermediate database (before postgres) |
+
+ - `elaine/secrets.json` contains database connection attributes
+```json
+{
+	"postgresql": {
+		"user": "USER_NAME",
+		"password": "PASSWORD",
+		"host": "IP_ADDRESS - localhost",
+		"port": "PORT_of_Postgres - 5432",
+		"database": "NAME_OF_DATABASE"
+	}
+}
+```
 
 ## PyCharm -- git
  - Create/Update files
