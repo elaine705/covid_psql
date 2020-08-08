@@ -5,7 +5,11 @@
  - 2016 Presidential Election to determine each state's political party
  
 ## Process
- - Automatatically loaded most recent data in Postgres
+ - Automatically loaded most recent data in Postgres
+ 
+## Postgres
+ - Database Connections via pg Admin
+![Postgres Connections](/img/02_postgres_database_connections.png)
  
 ## Grafana
  - Piped results to Grafana Dashboard for visualization 
