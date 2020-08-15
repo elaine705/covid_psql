@@ -63,3 +63,17 @@ connection.rollback()
  ```sql
  TRUNCATE TABLE CLUSTER 
 ```
+
+### CONSTRAINTS
+    - adding constraints to table
+ ```sql
+    ALTER TABLE table_name
+    ADD CONSTRAINT constraint_name CHECK/UNIQUE/FOREIGN KEY/PRIMARY KEY (condition)
+ ```
+
+ ```sql
+    CREATE TABLE table_name 
+    column_name datatype 
+    ...
+    CONSTRAINT contraint_name CHECK (condition)
+ ```
