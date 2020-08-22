@@ -140,9 +140,12 @@ class Corona(object):
 
         self.desired_index = Corona.get_desired_index(next(csv_data), Corona.DESIRED_COLUMNS)
         res = []
-        for row in csv_data:
-            if row and float(row[self.desired_index[-3]] or '0') and int(row[self.desired_index[-1]] or '0') < 9000:
-                res.append([row[index] or '0' for index in self.desired_index])
+        for row in filter(None, csv_data):
+            counts = int(float(row[self.desired_index[-1]] or '0'))
+            if float(row[self.desired_index[-3]] or '0') and int(counts) < 9000:
+                record = [row[index] or '0' for index in self.desired_index]
+                record[-1] = counts
+                res.append(record)
         return res
 
     def insert_into_db(self, data: list):

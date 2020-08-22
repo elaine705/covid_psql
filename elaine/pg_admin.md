@@ -12,4 +12,4 @@
  - set format to plain
  - UTF8 for encoding
  - save backup
- - dump options have 
+ - dump options have other tools

@@ -77,3 +77,30 @@ connection.rollback()
     ...
     CONSTRAINT contraint_name CHECK (condition)
  ```
+
+    - adding foreign key
+ ```sql
+    CONSTRAINT fk_name FOREIGN KEY (name)
+        REFERNCES table(name) MATCH SIMPLE 
+        ON UPDATE CASCADE*
+        ON DELETE RESTRICT*
+ ``` 
+* CASCADE - If the reference changes, change the corresponding one
+* RESTRICT - Prevent changes
+* NO ACTION - No change; if there is change to reference, do nothing to current one
+* SET DEFAULT - If there is a default value, set to default
+* SET NULL 
+
+ ```sql
+    UPDATE table_name
+    SET column_name = value
+    WHERE condition
+ ```
+     - in this case when there is an update on the foreign key, there will be an update on the reference
+ ```sql
+    DELETE FROM table_name
+    WHERE condition
+ ```
+    - in this case, the change will be restricted, will not be deleted
+ ### json Format
+ "cold": [] , "hot": [], name: ''

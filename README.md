@@ -15,6 +15,7 @@
 |[PyCharm Community](https://www.jetbrains.com/pycharm/)| 2020.1.4 | Editing `Python` and `SQL` source code |
 |[Postgres](https://www.postgresql.org/download/) | 12.0 | Database for connection |
 |[Grafana](https://grafana.com/grafana/download) | OpenSource 7.1.3 | Dashboard visualization | 
+|[Tableau Public](https://public.tableau.com/en-us/s/)| 2020.3 | Alternate visualizations |
 |SQLite| - | Intermediate database (before postgres) |
 
  - `elaine/secrets.json` contains database connection attributes
@@ -43,3 +44,7 @@
 ## Grafana
  - Piped results to Grafana Dashboard for visualization 
 ![Corona Rates](/img/01_grafana_mortality.png)
+
+## Tableau
+ - Visualized each state's death count with a gradient heat map 
+![Death Counts](/img/03_tableau_death_map.png)
