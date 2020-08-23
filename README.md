@@ -48,3 +48,6 @@
 ## Tableau
  - Visualized each state's death count with a gradient heat map 
 ![Death Counts](/img/03_tableau_death_map.png)
+![Death Grid](/img/04_tableau_tiled.png)
+![Death Monthly Grid](/img/05_tableau_monthly_death.png)
+![Death Cali Grid](/img/06_tableau_cali_monthly_death.png)
